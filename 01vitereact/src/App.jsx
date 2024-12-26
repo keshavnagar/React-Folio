@@ -36,10 +36,10 @@ function App() {
           <ItemDate date={response[0].date} montth={response[0].month} year={response[0].year}  >Mai hu jian </ItemDate>
 
           <Item itemName={response[1].itemName} ></Item>
-          <ItemDate date={response[1].date} montth={response[1].month} year={response[1].year} ></ItemDate>
+          <ItemDate date={response[1].date} montth={response[1].month} year={response[1].year} >adjflkasd</ItemDate>
 
           <Item itemName={response[2].itemName} ></Item>
-          <ItemDate date={response[2].date} montth={response[2].month} year={response[2].year} ></ItemDate>
+          <ItemDate date={response[2].date} montth={response[2].month} year={response[2].year} >asddfkajsd;lf</ItemDate>
         </div>
         <div className='container'>
           <br />
