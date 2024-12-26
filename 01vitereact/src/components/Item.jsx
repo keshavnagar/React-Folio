@@ -3,9 +3,9 @@ import './Item.css'
 
 function Item (props){
 
-    const itemName = props.itemName;
+    const output = props.itemName;
 
-    return (<p className='nirma'>{itemName}</p>);
+    return (<p className='nirma'>{output}</p>);
 
 }
 
