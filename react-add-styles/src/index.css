@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+QLD+Guides&family=Quicksand:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  font-family: "Dancing Script", serif;
+  color: gray;
+}
+
+.Navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2 ;
+}
+
+.Navbar h1 {
+  color: rgb(255, 96, 96);
+}
+
+.Navbar .Links{
+  margin-left: auto;
+}
+
+.Navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.Navbar a:hover{
+  color: rgb(241, 81, 81)
+}
+
+.Content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding : 20px;
+}

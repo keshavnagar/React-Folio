@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="count">
-      <button onClick={CountDecrease} >Decrease the value </button>
+      <button onClick={CountDecrease} >Decrease  </button>
       <button onClick={CountIncrease}>Increase the value</button>
       <p>Count is : {count}</p>
     </div>
@@ -22,3 +22,5 @@ function App() {
 }
 
 export default App;
+/*<button onClick={CountDecrease} >Decrease {count} </button>
+      <button onClick={CountIncrease}>Increase {count}</button> */
