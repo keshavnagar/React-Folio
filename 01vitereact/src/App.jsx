@@ -1,53 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Item from './components/Item'
-import ItemDate from './components/ItemDate'
-import Card from './components/Card'
-
+import "./App.css";
+import Navbar from "./components/navbar";
+import Home from "./components/Home";
 function App() {
-  const response = [
-    {
-      itemName: "nirma",
-      date: "20",
-      month: "june",
-      year: "1992"
-    },
-    {
-      itemName: "surfxl",
-      date: "21",
-      month: "july",
-      year: "1989"
-    },
-    {
-      itemName: "ghadi",
-      date: "23",
-      month: "january",
-      year: "1982"
-    }
-  ];
-
+  const message = "welcome to my website";
+  const visit = 90;
+  // const object = {
+  //   key : "ro",
+  //   date : "8-9-8"
+  // }
+  const link = "https://chatgpt.com/c/6787b556-3cf0-8007-9bcc-7d6ca3ad8776";
   return (
-    <>
-      <Card>
-        <div className='components' >
-          <Item itemName={response[0].itemName} ></Item>
-          <ItemDate date={response[0].date} montth={response[0].month} year={response[0].year}  >Mai hu jian </ItemDate>
-
-          <Item itemName={response[1].itemName} ></Item>
-          <ItemDate date={response[1].date} montth={response[1].month} year={response[1].year} >adjflkasd</ItemDate>
-
-          <Item itemName={response[2].itemName} ></Item>
-          <ItemDate date={response[2].date} montth={response[2].month} year={response[2].year} >asddfkajsd;lf</ItemDate>
-        </div>
-        <div className='container'>
-          <br />
-          hello namaskar
-        </div>
-      </Card>
-    </>
-  )
+    <div className="App">
+      <Navbar />
+      <div className="content"></div>
+      <Home />
+      <h1>{message}</h1>
+      <p>{visit} visitors in this month</p>
+      {/* <h1>welcome to my home</h1> */}
+     <p>{89}</p>
+     <p>{"class"}</p>
+     {/* <p>{object}</p> we do not do this thing beccause of not use to print object and array  */}
+     <p>{[1,2,3,4,5]}</p>
+     <p>{ Math.random()*10}</p>
+     <p><a target="_blank" href={link}>google</a></p>
+    </div>
+  );
 }
 
-export default App
+export default App;
